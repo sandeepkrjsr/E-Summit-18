@@ -7,31 +7,21 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.ecell.esummit.Tracks">
-
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
         android:theme="@style/AppTheme.AppBarOverlay">
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_weight="1"
-
-
             app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-
-            >
-
+            app:popupTheme="@style/AppTheme.PopupOverlay">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
                 <TextView
                     android:id="@+id/trackname"
                     android:layout_width="wrap_content"
@@ -41,49 +31,22 @@
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </RelativeLayout>
-
         </android.support.v7.widget.Toolbar>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/white"
-            >
-
+            android:background="@color/white">
         </View>
-
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <!--<android.support.design.widget.TabItem-->
-                <!--android:id="@+id/tabItem"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="DAY 1" />-->
-
-            <!--<android.support.design.widget.TabItem-->
-                <!--android:id="@+id/tabItem2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="DAY 2" />-->
-
-            <!--<android.support.design.widget.TabItem-->
-                <!--android:id="@+id/tabItem3"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="DAY 3" />-->
-
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
-
     <android.support.v4.view.ViewPager
         android:id="@+id/container"
-
         android:layout_below="@id/appbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-
 </RelativeLayout>
