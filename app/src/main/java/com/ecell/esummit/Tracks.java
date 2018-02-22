@@ -48,28 +48,28 @@ public class Tracks extends AppCompatActivity {
 
         if(get_track.equals( "1")){
             trackname.setText("TECH TRACK");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.tech_blue));
-            tabs.setBackgroundColor(getResources().getColor(R.color.tech_blue));
+            toolbar.setBackgroundColor(getResources().getColor(R.color.technology));
+            tabs.setBackgroundColor(getResources().getColor(R.color.technology));
 
 
          }
 
         if(get_track.equals( "2")){
             trackname.setText("STARTUP PLANET");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.startupplanet_green_tab));
-            tabs.setBackgroundColor(getResources().getColor(R.color.startupplanet_green_tab));
+            toolbar.setBackgroundColor(getResources().getColor(R.color.startupplanet));
+            tabs.setBackgroundColor(getResources().getColor(R.color.startupplanet));
 
         }
         if(get_track.equals("3")){
             trackname.setText("BUSINESS TRACK");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.business_red));
-            tabs.setBackgroundColor(getResources().getColor(R.color.business_red));
+            toolbar.setBackgroundColor(getResources().getColor(R.color.business));
+            tabs.setBackgroundColor(getResources().getColor(R.color.business));
 
         }
         if(get_track.equals("4")){
             trackname.setText("INNOVATION");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.innovation_grey));
-            tabs.setBackgroundColor(getResources().getColor(R.color.innovation_grey));
+            toolbar.setBackgroundColor(getResources().getColor(R.color.innovation));
+            tabs.setBackgroundColor(getResources().getColor(R.color.innovation));
 
         }
 
@@ -108,21 +108,21 @@ public class Tracks extends AppCompatActivity {
             switch (position) {
                 case 0:
 
-                    Day tab1 = new Day();
+                    Schedules tab1 = new Schedules();
 
                     bundle.putString("track", get_track);
                     bundle.putString("day", "1");
                     tab1.setArguments(bundle);
                     return tab1;
                 case 1:
-                    Day tab2 = new Day();
+                    Schedules tab2 = new Schedules();
                     bundle.putString("track", get_track);
                     bundle.putString("day", "2");
                     tab2.setArguments(bundle);
                     return tab2;
 
                 case 2:
-                    Day tab3 = new Day();
+                    Schedules tab3 = new Schedules();
                     bundle.putString("track", get_track);
                     bundle.putString("day", "3");
                     tab3.setArguments(bundle);

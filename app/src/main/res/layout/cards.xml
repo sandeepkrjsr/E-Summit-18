@@ -4,55 +4,64 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_margin="10dp"
-    android:background="@drawable/card_track">
-    <TextView
-        android:id="@+id/title"
+    android:layout_margin="@dimen/space_8"
+    android:background="@color/white">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="KEYNOTE #1"
-        android:textColor="#ff9812"
-        android:textStyle="bold"
-        android:padding="15dp"/>
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingBottom="@dimen/space_8"
+        android:background="@drawable/side_nav_bar">
+        <TextView
+            android:id="@+id/title"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KEYNOTE #1"
+            android:textSize="@dimen/space_20"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM - 12:00 PM"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical|end" />
+    </LinearLayout>
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HOW TO BUILD A BUSINESS FROM GROUND UP"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"/>
+        android:textSize="@dimen/space_16"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"/>
     <TextView
         android:id="@+id/speaker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DR. SUPER THAROOR"
         android:textStyle="bold"
-        android:paddingLeft="15dp"/>
-    <LinearLayout
+        android:paddingLeft="@dimen/space_12" />
+    <TextView
+        android:id="@+id/venue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:padding="15dp">
-        <TextView
-            android:id="@+id/time"
-            android:layout_weight="0.5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Campus Six Audi"
-            android:drawableLeft="@drawable/ic_venue"
-            android:gravity="center_vertical"/>
-        <TextView
-            android:id="@+id/venue"
-            android:layout_weight="0.5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="10:00 AM - 12:00 PM"
-            android:textAlignment="textEnd"
-            android:gravity="end|center_vertical"
-            android:drawableLeft="@drawable/ic_time" />
-    </LinearLayout>
+        android:text="  Campus 6 Auditorium"
+        android:textSize="@dimen/space_16"
+        android:textColor="@color/title"
+        android:drawableLeft="@drawable/ic_venue"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingBottom="@dimen/space_8"/>
 </LinearLayout>

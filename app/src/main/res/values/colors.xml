@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ff9812</color>
-    <color name="colorPrimaryDark">#3e3830</color>
-    <color name="colorAccent">#ff9812</color>
+    <color name="colorPrimary">#009dff</color>
+    <color name="colorPrimaryDark">#00689c</color>
+    <color name="colorAccent">#ff0077</color>
 
     <color name="white">#fff</color>
     <color name="black">#000</color>
 
-    <color name="startupplanet_green">#00ffae</color>
-    <color name="startupplanet_green_tab">#2ed997</color>
+    <color name="technology">#015776</color>
+    <color name="innovation">#262626</color>
+    <color name="business">#a10101</color>
+    <color name="startupplanet">#006948</color>
 
-    <color name="tech_blue">#00baff</color>
-
-    <color name="innovation_grey">#9f9f9f</color>
-    <color name="business_red">#ff3e3e</color>
-    <color name="highlight">#ff9812</color>
-    <color name="lightbackground">#34ff9812</color>
+    <color name="title">#0089a4</color>
 </resources>
