@@ -88,7 +88,6 @@ class Schedules : Fragment() {
                 if (get_data.getString("speaker") != null) {
                     array_speaker!!.add(get_data.getString("speaker"))
                 }
-                //                array_profile.add(get_data.getString("profile"));
             }
 
             adapter = Adapter(this!!.array_time!!, this!!.array_title!!, this!!.array_venue!!, this!!.array_description!!, this!!.array_speaker!!, this!!.array_profile!!)
@@ -99,7 +98,6 @@ class Schedules : Fragment() {
     }
 
     companion object {
-
         internal var DATA_URL = "http://kiitecell.hol.es/esummit181.php"
     }
 }

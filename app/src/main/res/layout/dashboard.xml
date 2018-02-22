@@ -29,15 +29,15 @@
             android:layout_weight="0.5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="Innovation"
-            android:text="Innovation\nTrack"
+            android:onClick="Startup"
+            android:text="Start-up\nPlanet"
             android:textSize="@dimen/space_20"
-            android:textColor="@color/innovation"
+            android:textColor="@color/startupplanet"
             android:textStyle="bold"
-            android:background="@drawable/track_innovation"
+            android:background="@drawable/track_startupplannet"
             tools:ignore="OnClick"
             android:gravity="bottom|end"
-            android:padding="@dimen/space_24"/>
+            android:padding="@dimen/space_24" />
     </LinearLayout>
     <LinearLayout
         android:layout_weight="0.5"
@@ -62,15 +62,15 @@
             android:layout_weight="0.5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="Startup"
-            android:text="Start-up\nPlanet"
+            android:onClick="Innovation"
+            android:text="Innovation\nTrack"
             android:textSize="@dimen/space_20"
-            android:textColor="@color/startupplanet"
+            android:textColor="@color/innovation"
             android:textStyle="bold"
-            android:background="@drawable/track_startupplannet"
+            android:background="@drawable/track_innovation"
             tools:ignore="OnClick"
             android:gravity="bottom|end"
-            android:padding="@dimen/space_24" />
+            android:padding="@dimen/space_24"/>
     </LinearLayout>
 
 </LinearLayout>

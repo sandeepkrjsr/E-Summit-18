@@ -1,9 +1,11 @@
 package com.ecell.esummit
 
+import android.graphics.Color
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 
 /**
@@ -16,18 +18,16 @@ internal class Adapter(private val array_time: List<String>, private val array_t
     private var venue: TextView? = null
     private var description: TextView? = null
     private var speaker: TextView? = null
-    private val profile: TextView? = null
+    private var header: LinearLayout? = null
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
         init {
-
             time = view.findViewById(R.id.time) as TextView
             title = view.findViewById(R.id.title) as TextView
             venue = view.findViewById(R.id.venue) as TextView
             description = view.findViewById(R.id.description) as TextView
             speaker = view.findViewById(R.id.speaker) as TextView
-
+            header = view.findViewById(R.id.header) as LinearLayout
         }
     }
 
@@ -40,10 +40,9 @@ internal class Adapter(private val array_time: List<String>, private val array_t
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         time!!.text = array_time[position]
         title!!.text = array_title[position]
-        venue!!.text = array_venue[position]
+        venue!!.text = "  "+array_venue[position]
         description!!.text = array_description[position]
         speaker!!.text = array_speaker[position]
-        //        profile.setText(array_profile.get(position));
     }
 
     override fun getItemCount(): Int {

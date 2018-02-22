@@ -1,6 +1,5 @@
 package com.ecell.esummit;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -18,22 +17,20 @@ import android.widget.TextView;
  */
 
 public class Tracks extends AppCompatActivity {
-    String get_track;
+    private String get_track;
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    TextView trackname;
-    Toolbar toolbar;
-
+    private TextView trackname;
+    private Toolbar toolbar;
     private ViewPager mViewPager;
-    TabLayout tabs;
+    private TabLayout tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tracks);
+        setContentView(R.layout.tracks);
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-
         actionBar.hide();
 
         toolbar=(Toolbar)findViewById(R.id.toolbar);
@@ -42,42 +39,31 @@ public class Tracks extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         trackname=(TextView)findViewById(R.id.trackname);
+        get_track = getIntent().getStringExtra("track");
 
-         get_track = getIntent().getStringExtra("track");
-
-
-        if(get_track.equals( "1")){
-            trackname.setText("TECH TRACK");
+        if(get_track.equals( "1")) {
+            trackname.setText("Technology Track");
             toolbar.setBackgroundColor(getResources().getColor(R.color.technology));
             tabs.setBackgroundColor(getResources().getColor(R.color.technology));
-
-
-         }
-
-        if(get_track.equals( "2")){
-            trackname.setText("STARTUP PLANET");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.startupplanet));
-            tabs.setBackgroundColor(getResources().getColor(R.color.startupplanet));
-
         }
-        if(get_track.equals("3")){
-            trackname.setText("BUSINESS TRACK");
+        if(get_track.equals("2")){
+            trackname.setText("Business Track");
             toolbar.setBackgroundColor(getResources().getColor(R.color.business));
             tabs.setBackgroundColor(getResources().getColor(R.color.business));
-
         }
-        if(get_track.equals("4")){
-            trackname.setText("INNOVATION");
+        if(get_track.equals("3")){
+            trackname.setText("Innovation Track");
             toolbar.setBackgroundColor(getResources().getColor(R.color.innovation));
             tabs.setBackgroundColor(getResources().getColor(R.color.innovation));
-
         }
-
-
+        if(get_track.equals("4")){
+            trackname.setText("Startup Planet");
+            toolbar.setBackgroundColor(getResources().getColor(R.color.startupplanet));
+            tabs.setBackgroundColor(getResources().getColor(R.color.startupplanet));
+        }
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
     }
 
 
@@ -107,9 +93,7 @@ public class Tracks extends AppCompatActivity {
             Bundle bundle = new Bundle();
             switch (position) {
                 case 0:
-
                     Schedules tab1 = new Schedules();
-
                     bundle.putString("track", get_track);
                     bundle.putString("day", "1");
                     tab1.setArguments(bundle);
@@ -120,7 +104,6 @@ public class Tracks extends AppCompatActivity {
                     bundle.putString("day", "2");
                     tab2.setArguments(bundle);
                     return tab2;
-
                 case 2:
                     Schedules tab3 = new Schedules();
                     bundle.putString("track", get_track);
@@ -130,7 +113,6 @@ public class Tracks extends AppCompatActivity {
                 default:
                     return null;
             }
-
         }
 
         @Override
@@ -142,11 +124,11 @@ public class Tracks extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "DAY 1";
+                    return "Day 1";
                 case 1:
-                    return "DAY 2 ";
+                    return "Day 2 ";
                 case 2:
-                    return "DAY 3 ";
+                    return "Day 3 ";
             }
             return null;
         }

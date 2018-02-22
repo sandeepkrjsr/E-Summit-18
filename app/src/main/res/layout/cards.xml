@@ -5,8 +5,10 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="@dimen/space_8"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:elevation="@dimen/space_12">
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -15,7 +17,7 @@
         android:paddingRight="@dimen/space_12"
         android:paddingTop="@dimen/space_8"
         android:paddingBottom="@dimen/space_8"
-        android:background="@drawable/side_nav_bar">
+        android:background="@drawable/header">
         <TextView
             android:id="@+id/title"
             android:layout_weight="0.5"
@@ -23,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="KEYNOTE #1"
             android:textSize="@dimen/space_20"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             android:textColor="@color/white" />
         <TextView
             android:id="@+id/time"
