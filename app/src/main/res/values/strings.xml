@@ -6,4 +6,9 @@
 
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="technology">Technology\n<font color='#ffffff'>Track</font></string>
+    <string name="startup">Startup\n<font color='#ffffff'>Planet</font></string>
+    <string name="business">Business\n<font color='#ffffff'>Track</font></string>
+    <string name="innovation">Innovation\n<font color='#ffffff'>Track</font></string>
 </resources>

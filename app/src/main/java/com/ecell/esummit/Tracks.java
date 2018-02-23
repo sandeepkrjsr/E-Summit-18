@@ -47,19 +47,19 @@ public class Tracks extends AppCompatActivity {
             tabs.setBackgroundColor(getResources().getColor(R.color.technology));
         }
         if(get_track.equals("2")){
+            trackname.setText("Startup Planet");
+            toolbar.setBackgroundColor(getResources().getColor(R.color.startup));
+            tabs.setBackgroundColor(getResources().getColor(R.color.startup));
+        }
+        if(get_track.equals("3")){
             trackname.setText("Business Track");
             toolbar.setBackgroundColor(getResources().getColor(R.color.business));
             tabs.setBackgroundColor(getResources().getColor(R.color.business));
         }
-        if(get_track.equals("3")){
+        if(get_track.equals("4")){
             trackname.setText("Innovation Track");
             toolbar.setBackgroundColor(getResources().getColor(R.color.innovation));
             tabs.setBackgroundColor(getResources().getColor(R.color.innovation));
-        }
-        if(get_track.equals("4")){
-            trackname.setText("Startup Planet");
-            toolbar.setBackgroundColor(getResources().getColor(R.color.startupplanet));
-            tabs.setBackgroundColor(getResources().getColor(R.color.startupplanet));
         }
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);

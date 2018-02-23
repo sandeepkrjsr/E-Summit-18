@@ -16,15 +16,15 @@ class Dashboard : Activity() {
         get_schedule("1")
     }
 
-    fun Business(v: View){
+    fun Startup(v: View){
         get_schedule("2")
     }
 
-    fun Innovation(v: View){
+    fun Business(v: View){
         get_schedule("3")
     }
 
-    fun Startup(v: View){
+    fun Innovation(v: View){
         get_schedule("4")
     }
 
