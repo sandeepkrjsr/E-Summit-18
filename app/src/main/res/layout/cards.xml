@@ -21,7 +21,7 @@
             android:paddingRight="@dimen/space_12"
             android:paddingTop="@dimen/space_8"
             android:paddingBottom="@dimen/space_8"
-            android:background="@drawable/header">
+            >
             <TextView
                 android:id="@+id/title"
                 android:layout_weight="0.4"
@@ -50,15 +50,29 @@
             android:textSize="@dimen/space_16"
             android:paddingLeft="@dimen/space_12"
             android:paddingRight="@dimen/space_12"
-            android:paddingTop="@dimen/space_8"/>
+            android:paddingTop="@dimen/space_8"
+            android:paddingBottom="@dimen/space_4"/>
         <TextView
-            android:visibility="gone"
+
             android:id="@+id/speaker"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DR. SUPER THAROOR"
-            android:textColor="@color/black"
+            android:text="  DR. SUPER THAROOR"
+            android:textColor="@color/business"
             android:textStyle="italic"
+            android:paddingLeft="@dimen/space_12"
+            />
+
+        <TextView
+            android:visibility="gone"
+
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEO ABCD"
+            android:textColor="@color/glass_black"
+
             android:paddingLeft="@dimen/space_12" />
         <TextView
             android:id="@+id/venue"

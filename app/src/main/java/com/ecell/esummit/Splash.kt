@@ -22,7 +22,7 @@ class Splash : Activity() {
                 } catch (e: Exception) {
 
                 } finally {
-                    val intent = Intent(baseContext, Dashboard::class.java)
+                    val intent = Intent(baseContext, Registration::class.java)
                     startActivity(intent)
                 }
             }

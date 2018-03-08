@@ -93,19 +93,19 @@ public class Tracks extends AppCompatActivity {
             Bundle bundle = new Bundle();
             switch (position) {
                 case 0:
-                    Schedules tab1 = new Schedules();
+                    Day tab1 = new Day();
                     bundle.putString("track", get_track);
                     bundle.putString("day", "1");
                     tab1.setArguments(bundle);
                     return tab1;
                 case 1:
-                    Schedules tab2 = new Schedules();
+                    Day tab2 = new Day();
                     bundle.putString("track", get_track);
                     bundle.putString("day", "2");
                     tab2.setArguments(bundle);
                     return tab2;
                 case 2:
-                    Schedules tab3 = new Schedules();
+                    Day tab3 = new Day();
                     bundle.putString("track", get_track);
                     bundle.putString("day", "3");
                     tab3.setArguments(bundle);
